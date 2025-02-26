@@ -5,7 +5,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     exit();
 }
 
-$conn = new mysqli('localhost', 'root', '', 'quizora');
+$conn = new mysqli('localhost:3307', 'root', '', 'quizora');
 if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
 }
